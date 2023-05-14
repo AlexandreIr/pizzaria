@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Rei</title>
+    <script src="./pizzaria.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Pizzaria Rei - controle de pedidos</h1>
+    <form>
+        <p>
+            Item do pedido:
+            <input type="radio" name="product" id="rbtnPizza" checked autofocus>Pizza
+            <input type="radio" name="product" id="rbtnDrink">Bebida
+            <span>Item:</span>
+            <select id="inPizza">
+                <option value="mid-size">Pizza Media</option>
+                <option value="big">Pizza Grande</option>
+                <option value="family-size">Pizza Família</option>
+            </select>
+            <select id="inDrink" class="hidden">
+                <option value="soda">Refrigerante Litro</option>
+                <option value="juice">Jarra de suco</option>
+                <option value="water">Água</option>
+            </select>
+        </p>
+        <p>
+            Detalhes do Item: 
+            <input type="text" id="inDetails" class="details">
+            <input type="submit" value="Adicionar">
+        </p>
+    </form>
+    <pre></pre>
+</body>
+</html>
